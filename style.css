@@ -1,0 +1,296 @@
+@font-face{
+    font-family: 'Trap-regular';
+    src: url(/Asset/font/Trap-Regular.otf);
+}
+@font-face{
+    font-family: 'Trap-Bold';
+    src: url(/Asset/font/Trap-Bold.otf);
+}
+@font-face{
+    font-family: 'Trap-Light';
+    src: url(/Asset/font/Trap-Light.otf);
+}
+@font-face{
+    font-family: 'ALi-Light';
+    src: url(/Asset/font/Alibaba-PuHuiTi-Light.ttf);
+}
+@font-face{
+    font-family: 'ALi-Regular';
+    src: url(/Asset/font/Alibaba-PuHuiTi-Regular.ttf);
+}
+@font-face{
+    font-family: 'ALi-Medium';
+    src: url(/Asset/font/Alibaba-PuHuiTi-Medium.ttf);
+}
+body{
+    margin: 0;
+    background-color: rgb(255, 255, 255)
+}
+/* --------------------------------Header------------------------------- */
+.header {
+    margin-top: 30px;
+}
+.header .nav{
+    margin: 0px 50px;
+}
+.header .nav img{
+    margin: 0px;
+    width: 50px;
+    height: 100%;
+}.header .nav p{
+    margin: 0px;
+    padding: 0px;
+    display: inline-block;
+    font-size: 14px;
+    transform: translateY(-8px);
+    font-family: Trap-Light;
+    color:#3D5588;
+}
+.header .nav ul{
+    margin-left: 100px;
+    padding: 0;
+    list-style: none;
+    float: right;
+}
+.header .nav ul li{
+    display: inline-block;
+    padding: 0px 60px;
+}
+.header .nav ul li a{
+    text-decoration: none;
+    color: #3D5588;
+    font-family: Trap-regular;
+    text-shadow: none;
+    transition: .2s;
+}
+.header .banner {
+    margin: 10px 0;
+}
+.header .banner img{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+.header .banner .banner_content{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+}
+.header .banner h1{
+    color: white;
+    margin: 0;
+    font-size: 50px;
+    font-family: Trap-Bold;
+}
+.header .banner p{
+    color: white;
+    margin: 0;
+    font-family: Trap-Light;
+    font-size: 19px;
+}
+.header .nav ul li a:hover{
+    text-shadow:1px 1px #FFB511;
+}
+/* --------------------------------Projects------------------------------- */
+.main-container{
+    margin: 0 50px;
+}
+.main-container .mainTitle{
+    margin: 120px 0 0 0;
+    text-align: center;
+    font-size: 30px;
+    font-family: Trap-Bold;
+    color: rgb(1, 4, 17);
+}
+.main-container .projects-container{
+    position: relative;
+    min-width: 0px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+}
+.main-container .projects-container .project{
+    position: relative;
+    width: 300px;
+    height: 200px;
+    overflow: hidden;
+    margin: 30px;
+}
+.main-container .projects-container .project .projectPhoto{
+    width: 100%;
+    height: 100%;
+}
+.main-container .projects-container .project .projectView{
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.8);
+    opacity: 0;
+    transition: .3s;
+    transition-timing-function: ease-in;
+}
+.main-container .projects-container .project .projectView .title{
+    transform: translateY(80px);
+}
+.main-container .projects-container .project .projectView .title h2{
+    margin: 0;
+    color:rgb(230, 230, 230);
+    font-family: ALi-Medium;
+    font-size: 24px;
+}
+.main-container .projects-container .project .projectView .title p{
+    margin: 0;
+    color: rgb(230, 230, 230);
+    font-family: ALi-Regular;
+    font-size: 14px;
+}
+.main-container .projects-container .project:hover .projectView{
+    opacity: 1;
+}
+/* --------------------------------Footer------------------------------- */
+.footer{
+    margin-top: 30px;
+    background-color: rgb(241, 241, 241);
+}
+.footer .bottom{
+    padding: 40px 50px; /*此处使用margin的话会导致footer消失*/
+    border-top: 0.5px solid #464646;
+    font-size: 13px;
+    font-family: Trap-Light;
+    color: #7e7e7e;
+}
+.footer .bottom .copyright{
+    float: left;
+}
+.footer .bottom .info{
+    float: right;
+}
+
+/* --------------------------------ProjectDetails------------------------------- */
+.mainContent{
+    margin: 80px 200px;
+    position: relative;
+}
+.mainContent .projectTitle {
+    margin-bottom: 20px;
+}
+.mainContent .projectTitle h1{
+    margin: 0px;
+    font-family: Ali-Medium;
+    font-size: 50px;
+}
+.mainContent .projectTitle p{
+    margin-top: 5px;
+    font-family: Ali-Regular;
+    font-size: 18px;
+    color:#5e5e5e;
+}
+.mainContent .subTitle{
+    display: flex;
+}
+.mainContent .subTitle p{
+    margin: 0px;
+    padding: 0 20px 0 0;
+    font-family: Ali-Light;
+    font-size: 14px;
+    color:#5e5e5e;
+}
+.mainContent .introduction {
+    margin: 25px 0 10px;
+}
+.mainContent .introduction p{
+    margin: 0;
+    text-indent: 2em;
+    font-family: Ali-Regular;
+    line-height: 1.8em;
+}
+.mainContent .photoView img{
+    width: 100%;
+    height: 100%;
+    margin-bottom: 1px;
+}
+/* --------------------------------AboutMe------------------------------- */
+.main-AB-container{
+    margin: 50px 80px;
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    /* position: relative; */
+}
+.main-AB-container .portfolio-photo-container{
+    text-align: center;
+    padding: 0 20px;
+}
+.main-AB-container .portfolio-photo-container img{
+    width: 70%;
+    height: auto;
+}
+.main-AB-container .cv-container{
+    padding: 0 20px;
+}
+
+.main-AB-container .cv-container h2{
+    font-family: 'Trap-Bold';
+    font-size: 48px;
+    margin: 0;
+    color: #3D5588;
+    text-shadow:3px 2px #FFB511;
+}
+.main-AB-container .cv-container h3{
+    font-family: 'Trap-Bold';
+    font-size: 20px;
+    margin: 3em 0 0.5em 0;
+    color: #3D5588;
+    text-shadow:1px 1px #FFB511;
+}
+.main-AB-container .cv-container p{
+    font-family: 'Helvetica';
+    font-weight: 300;
+    font-size: 18px;
+    margin: 0;
+    line-height: 1.5em;
+}
+.main-AB-container .cv-container .introduction p{
+    padding: 10px 0;
+}
+.main-AB-container .cv-container .introduction span{
+    padding: 10px 0;
+}
+.main-AB-container .cv-container .experienceContainer p{
+    padding: 0;
+    line-height: 1.8em;
+    font-size: 16px;
+}
+.main-AB-container .photo-container p{
+    margin: 1.5em 0 0 0;
+    font-family: 'Helvetica';
+    font-weight: 100;
+    line-height: 2em;
+    font-size: 14px;
+}
+.main-AB-container .photo-container img{
+    margin:  80px 0 0 0;
+}
+/* --------------------------------Gallery------------------------------- */
+.main-container .gallery-maintitle{
+    margin: 60px 0 30px 0;
+    text-align: center;
+    font-size: 50px;
+    font-family: Trap-Bold;
+    color: rgb(1, 4, 17);
+}
+.gallery{
+    margin: auto 50px;
+    columns: 3;
+    column-gap: 20px;
+}
+.gallery .photo{
+    width: 100%;
+    margin-bottom: 9px;
+    break-inside: avoid;
+}
+.gallery .photo img{
+    max-width: 100%;
+}
