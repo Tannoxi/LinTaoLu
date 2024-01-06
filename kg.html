@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>民族服饰知识图谱</title>
+    <script src="./js/d3.min.js"></script>
+    <style>
+        body{
+            overflow: hidden;
+            background-color: #eff0f3
+        }
+        .kg-container{
+            overflow: hidden;
+        }
+        .header{
+            font-size: 1.5em;
+            margin: 10px 0 ;
+        }
+        .content{
+            font-size: 0.8em;
+            color: #d9376e;
+            margin: 10px 0;
+        }
+        .search-container {
+            position: relative;
+            display: inline-block;
+            width: 200px;
+          }
+          
+          .search-input {
+            width: 100%;
+            padding: 10px;
+          }
+          
+          .dropdown-menu {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            width: 100%;
+            max-height: 200px;
+            overflow-y: auto;
+            background-color: #f8f8f8;
+            border: 1px solid #ccc;
+            padding: 0;
+            margin-top: 5px;
+            list-style-type: none;
+          }
+          
+          .dropdown-item {
+            padding: 5px 10px;
+            cursor: pointer;
+          }
+          
+          .highlight {
+            background-color: yellow;
+          }
+    </style>
+</head>
+<body>
+    <div class="header">民族服饰知识图谱可视化系统</div>
+    <div class="content">交互操作：鼠标拖拽查看节点；搜索框支持模糊搜索查询服饰节点（橘色节点）</div>
+
+    <label for="filter">搜索节点：</label>
+
+    <div class="search-container">
+        <input id="search-input" class="search-input" type="text" placeholder="输入服饰名称">
+        <ul id="dropdown-menu" class="dropdown-menu"></ul>
+    </div>
+
+    <svg  id="kg-container" width="1920" height="1080"></svg>
+    <script type="text/javascript" src="./js/kg.js"></script>
+</body>
+</html>
